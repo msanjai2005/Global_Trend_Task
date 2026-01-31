@@ -1,0 +1,111 @@
+/* Reset-ish */
+* {
+  box-sizing: border-box;
+}
+
+/* Page background */
+.login-container {
+  padding: 15px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+/* Card */
+.login-card {
+  width: 340px;
+  padding: 28px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.08),
+    0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Heading */
+.login-card h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Inputs */
+.login-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.login-card input::placeholder {
+  color: #9ca3af;
+}
+
+.login-card input:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+/* Button */
+.login-card button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #6366f1;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.login-card button:hover:not(:disabled) {
+  background: #4f46e5;
+}
+
+.login-card button:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.login-card button:disabled {
+  background: #a5b4fc;
+  cursor: not-allowed;
+}
+
+/* Error message */
+.error {
+  background: #fee2e2;
+  color: #991b1b;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+/* Footer text */
+.login-card p {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 13px;
+  color: #374151;
+}
+
+.login-card a {
+  color: #6366f1;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.login-card a:hover {
+  text-decoration: underline;
+}

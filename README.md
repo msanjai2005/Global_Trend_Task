@@ -38,24 +38,6 @@ This project demonstrates real-world full-stack development practices including 
 - bcrypt
 
 ---
-client/
-├── src/
-│ ├── components/
-│ ├── context/
-│ ├── pages/
-│ ├── services/
-│ ├── styles/
-│ └── App.js
-
-server/
-├── controllers/
-├── models/
-├── routes/
-├── middleware/
-└── server.js
-
-
----
 
 ## ⚙️ Environment Variables
 
@@ -78,7 +60,7 @@ JWT_SECRET=your_jwt_secret
 git clone https://github.com/your-username/task-manager.git
 cd task-manager
 
-2️⃣ Backend Setup
+##2️⃣ Backend Setup
 cd server
 npm install
 npm run dev
@@ -87,16 +69,16 @@ npm run dev
 Server will start at:
 http://localhost:5000
 
-3️⃣ Frontend Setup
+##3️⃣ Frontend Setup
 cd client
 npm install
 npm start
 
 
-Client will start at:
-http://localhost:3000
+#Client will start at:
+#http://localhost:3000
 
-🔐 API Endpoints (Sample)
+##🔐 API Endpoints (Sample)
 Auth
 
 POST /auth/register
